@@ -11,8 +11,14 @@ public class StarStudent {
 		
 		// 1. Initialize passedExam to a value.
 
-		boolean passedExam;
 		
+		
+		//String ex = JOptionPane.showInputDialog(null, "Did you Pass the test");
+		
+		//if( ex.equals("yes"))
+		//{
+		boolean passedExam=true; 
+		//}
 		// 2. Call the didYouPass method with the variable you just initialized
 		//    as the parameter so that it shows a pop-up.
 		
@@ -23,6 +29,11 @@ public class StarStudent {
 		//    the didYouPass method itself to get the other pop-up to show 
 		//    without changing the original value you gave to passedExam.
 		
+	didYouPass(!passedExam);
+	
+	
+	
+	
 	}
 	
 	public static void didYouPass(boolean passedExam) {

@@ -12,9 +12,44 @@ public class SleepyHead {
 		// i.e. >, <, ==, >=, <=, .equals() which all produce a true or false
 		// value.
 		
-		boolean isWeekend = false;
+	String st =	JOptionPane.showInputDialog(null, "What Day is it");
 		
-        // 1.) Run the program and look at the if-else statement below.
+	
+	boolean isWeekend =  st.equals("saturday")||st.equals("sunday");
+	
+	
+//		if(st.equals("monday"))
+//				{
+//		int isWeekend = 1;
+//				}
+//		else if(st.equals("tuesday"))
+//		{
+//int isWeekend = 1;
+//		}
+//		else if(st.equals("wednesday"))
+//		{
+//int isWeekend = 1;
+//		}
+//		else if(st.equals("thursday"))
+//		{
+//int isWeekend = 1;
+//		}
+//		else if(st.equals("friday"))
+//		{
+//int isWeekend = 1;
+//		}
+//		else if(st.equals("saturday"))
+//		{
+//int isWeekend = 1;
+//		}
+//		else if(st.equals("sunday"))
+//		{
+//int isWeekend = 1;
+//		}
+       
+		
+		
+		// 1.) Run the program and look at the if-else statement below.
 		
         // 2.) Change the value of isWeekend so that the pop-up in the
         //     if statement happens instead.
