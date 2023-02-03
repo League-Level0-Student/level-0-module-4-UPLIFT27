@@ -15,7 +15,7 @@ public class RedSquare {
 	
 	public static void main(String[] args) {
 		
-		boolean isRed = false;
+		boolean isRed = true;
 		boolean isSquare = true;
 		
 		// The && shown here means that both booleans must be true for the 
@@ -23,15 +23,38 @@ public class RedSquare {
 		// operator. 
 		if(isRed && isSquare) {
 			drawRedSquare();
+			JOptionPane.showMessageDialog(null, "You drew a red square");
 		}
+		else if(!isRed && isSquare)
+		{
+			drawBlueSquare();
+			JOptionPane.showMessageDialog(null, "You drew a blue square");
+		}
+		else if(isRed && !isSquare)
+		{
+			drawRedTriangle();
+			JOptionPane.showMessageDialog(null, "You drew a red triange");
+		}
+		else if(!isRed && !isSquare)
+		{
+			drawBlueTriangle();
+			JOptionPane.showMessageDialog(null, "You drew a blue triange");
+		}
+		
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
         }
+		
+		
+	 
+		
 		
 		// 1. Run the program and notice no shape is drawn.
 		
 		// 2. Initialize isRed to true instead of false and run the program 
 		//    again.
+		
+		
 		
 		// 3. Write an else if statement after the if statement that calls 
 		//    drawBlueSquare if isRed is false AND isSquare is true. 

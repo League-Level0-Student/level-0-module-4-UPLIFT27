@@ -9,19 +9,19 @@ public class GameOver {
 		boolean gameOver = false;
 		
 		// 1. Ask the user if the game is over and save their answer.
-		while(gameOver=true)
+		while(gameOver==false)
 
 		{		
-			String gam =JOptionPane.showInputDialog(null,"Is your game over");
+			String Gam =JOptionPane.showInputDialog("Is your game over");
 		
 		// 2. If they answer "yes" change gameOver to true.
-		if(gam.equals("yes"))
+		if(Gam.equals("yes"))
 		{
 		gameOver = true;
 		}
-		
-		
 		}
+		
+		
 		JOptionPane.showMessageDialog(null, "Game Over");
 		
 		
