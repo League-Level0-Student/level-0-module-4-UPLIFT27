@@ -1,5 +1,6 @@
 package _03_char._2_string_methods;
 
+import javax.swing.JOptionPane;
 
 public class StringMethods {
 	public static void main(String[] args) {
@@ -24,7 +25,27 @@ public class StringMethods {
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
 		
+		
+		String three = "BOB";	
+		
+		
+		for(int zz=0;zz<=three.length()-1;zz++)
+		{
+			System.out.println(three.charAt(zz));
+		
+		
+		
 	}
+	
+		for(int ll=0; ll<=3; ll++)
+		{
+			JOptionPane.showInputDialog("choose a letter")
+		}
+	
+	
+	
+	
+	
+	}
+
 }
-
-
