@@ -2,6 +2,8 @@ package _03_char._3_pi_aloud;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class PiAloud {
     /***********  SOUND ***************
      * Some computers are unable to play sounds.
@@ -11,6 +13,52 @@ public class PiAloud {
     boolean canPlaySounds = true;
 
 
+  public static void main(String[]args) 
+  
+  {
+	  String Pi= "3.1415926535897932384";
+ 
+	  int zz=20;
+	  Pi.charAt(zz);
+	 for(int i=0; i<=zz;i++) 
+	 {
+	  System.out.println(Pi.charAt(i));
+	 }
+  
+  
+  
+  
+  
+  
+  
+  for(int ii=0;ii<20; ii++)
+  {
+	String saved=JOptionPane.showInputDialog("spell Pi");
+  if( saved.charAt(0)!=(Pi.charAt(ii))                                          )
+  {
+	 ii=21; 
+	  JOptionPane.showMessageDialog(null, "you lost");
+  }
+  else
+  {
+	  JOptionPane.showMessageDialog(null, "correct");
+  }
+  
+  }  
+	  
+	  
+	  
+  }
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
     // 1. Make a main method and make sure your program can run
 
     // 2. Make a String variable to hold 20 digits of Pi. You could use http://www.piday.org/million/ to get this.

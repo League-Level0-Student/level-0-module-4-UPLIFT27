@@ -26,7 +26,7 @@ public class StringMethods {
 		//             for char 'b', then print "b is at index 1"
 		
 		
-		String three = "BOB";	
+		String three = "Sashrik";	
 		
 		
 		for(int zz=0;zz<=three.length()-1;zz++)
@@ -36,10 +36,15 @@ public class StringMethods {
 		
 		
 	}
-	
-		for(int ll=0; ll<=3; ll++)
+	String J= JOptionPane.showInputDialog("choose a letter to find its position");
+		
+		for(int ll=0; ll<three.length(); ll++)
 		{
-			JOptionPane.showInputDialog("choose a letter")
+			if(J.charAt(0)==three.charAt(ll))
+				
+			{
+				System.out.println(ll);
+					}
 		}
 	
 	
